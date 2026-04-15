@@ -3,39 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware Chile | Configura tu PC Gamer</title>
+    <title>PcHitbox | Precision Hardware • Engineered for Performance</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <h1>PC Master Chile</h1>
+        <div class="header-container">
+            <h1>Pc<span>Hitbox</span></h1>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#armatupc">Arma tu PC</a>
+                <a href="#hardware">Componentes</a>
+                <a href="#artisan">Descubre Artisan</a>
+                <a href="#monitores">Monitores</a>
+                <a href="#pedido">Donde va mi Pedido</a> <a href="#contacto">Contacto</a> </nav>
+            <div class="header-icons">
+                <span>🔍</span> <span>👤</span> <span>🛒</span>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#configurador">Arma tu PC</a></li>
-                <li><a href="#tienda">Periféricos</a></li>
-                <li><a href="#rendimiento">Guía de FPS</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Expertos en Hardware de Alto Rendimiento</h2>
-            <p>No solo vendemos piezas, te enseñamos cómo rinden en tus juegos favoritos.</p>
+        <section id="hero" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), #000), url('img/fondo-hero.jpg');">
+            <p class="hero-tag">LIKE A PRO • INGENIERÍA JAPONESA</p>
+            <h2>JUEGA COMO UN<br><span>PROFESIONAL</span></h2>
+            <p class="hero-subtext">Periféricos premium importados de Japón. Hechos para dominar cada partida.</p>
+            <button class="btn-main" onclick="location.href='#armatupc'">COMPRAR AHORA</button>
         </section>
 
-        <section id="configurador">
-            <h2>Configura tu PC a Medida</h2>
-            <p>Elige componentes compatibles y mira el precio final.</p>
-            </section>
+        <section id="armatupc" class="seccion-tienda">
+            <h2 class="titulo-categoria">ARMA TU <span>PC</span></h2>
+            <div class="builder-container">
+                <form class="builder-form">
+                    <div class="form-grid">
+                        <div class="field"><label>PROCESADOR</label><select><option>AMD Ryzen 5 7600 - $215.900</option></select></div>
+                        <div class="field"><label>GRÁFICA</label><select><option>RTX 4060 Ti - $429.900</option></select></div>
+                        <div class="field"><label>PLACA MADRE</label><select><option>ASUS TUF B650-PLUS - $234.900</option></select></div>
+                        <div class="field"><label>MEMORIA RAM</label><select><option>32GB Kingston Fury - $145.900</option></select></div>
+                        <div class="field"><label>ALMACENAMIENTO</label><select><option>1TB Crucial P3 Plus - $78.900</option></select></div>
+                        <div class="field"><label>REFRIGERACIÓN</label><select><option>Deepcool LT720 - $125.000</option></select></div>
+                        <div class="field"><label>GABINETE</label><select><option>Lian Li Lancool 216 - $105.000</option></select></div>
+                        <div class="field"><label>FUENTE DE PODER</label><select><option>TUF Gaming 850W - $130.000</option></select></div>
+                    </div>
+                    <div class="total-box">
+                        <h3>TOTAL ESTIMADO: <span>$1.465.500 CLP</span></h3>
+                        <button type="button" class="btn-main">COTIZAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="artisan" class="seccion-tienda dark-bg">
+            <h2 class="titulo-categoria">ARTISAN <span>JAPAN</span></h2>
+            <p class="sub-titulo">Mousepads importados. El fin del compromiso.</p>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box">
+                        <img src="img/artisan-hien.png" alt="Artisan Hien">
+                        <span class="jp-tag">匠</span>
+                    </div>
+                    <div class="info">
+                        <h3>FX HIEN SOFT</h3>
+                        <p class="precio">$79.990 CLP</p>
+                        <button class="btn-buy">Ver Detalle</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="img-box">
+                        <img src="img/artisan-zero.png" alt="Artisan Zero">
+                        <span class="jp-tag">零</span>
+                    </div>
+                    <div class="info">
+                        <h3>FX ZERO MID</h3>
+                        <p class="precio">$79.990 CLP</p>
+                        <button class="btn-buy">Ver Detalle</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="beneficios-artisan" class="seccion-tienda">
+            <h2 class="titulo-seccion-centro">RENDIMIENTO PURO IMPORTADO DE JAPÓN</h2>
+            <p class="sub-titulo-centro">Usado por los mejores profesionales de FPS por una sola razón: funciona. Control absoluto, velocidad letal, calidad sin compromisos.</p>
+            
+            <div class="grid-beneficios">
+                <div class="box-beneficio">
+                    <div class="icon-neon">📄</div>
+                    <h3>HECHO A MANO</h3>
+                    <p>Cada pad se fabrica con precisión japonesa y materiales seleccionados para durar miles de horas.</p>
+                </div>
+                <div class="box-beneficio">
+                    <div class="icon-neon">⊕</div>
+                    <h3>CONTROL ABSOLUTO</h3>
+                    <p>Superficie balanceada para apuntar con seguridad en cada flick y micro ajuste.</p>
+                </div>
+                <div class="box-beneficio">
+                    <div class="icon-neon">⚡</div>
+                    <h3>VELOCIDAD LETAL</h3>
+                    <p>Deslize fluido, cero friccion extra, respuesta inmediata en cada movimiento.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 60px;">
+                <button class="btn-main-glow">VER PRODUCTOS</button>
+            </div>
+        </section>
+
+        <section id="hardware" class="seccion-tienda dark-bg">
+            <h2 class="titulo-categoria">HARDWARE <span>ELITE</span></h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box"><img src="img/cpu.png" alt="CPU"></div>
+                    <div class="info"><h3>AMD Ryzen 5 7600</h3><p class="precio">$215.900 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+                <article class="card">
+                    <div class="img-box"><img src="img/gpu.png" alt="GPU"></div>
+                    <div class="info"><h3>RTX 4060 Ti</h3><p class="precio">$429.900 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="monitores" class="seccion-tienda">
+            <h2 class="titulo-categoria">PANTALLAS <span>ELITE</span></h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box"><img src="img/monitor1.png" alt="Monitor"></div>
+                    <div class="info"><h3>ASUS TUF 240Hz</h3><p class="precio">$219.990 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Proyecto Front End - Inacap</p>
+        <p>PCHITBOX CHILE • SEBASTIAN CAYO • INACAP 2026</p>
     </footer>
 
 </body>
