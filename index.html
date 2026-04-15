@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PcHitbox | Precision Hardware • Engineered for Performance</title>
+    <title>PcHitbox | Professional Hardware</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -14,11 +14,22 @@
             <h1>Pc<span>Hitbox</span></h1>
             <nav>
                 <a href="#hero">Inicio</a>
-                <a href="#armatupc">Arma tu PC</a>
-                <a href="#hardware">Componentes</a>
-                <a href="#artisan">Descubre Artisan</a>
+                
+                <div class="dropdown">
+                    <a href="#hardware" class="dropbtn">Componentes ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#hardware">Procesadores</a>
+                        <a href="#hardware">Tarjetas Gráficas</a>
+                        <a href="#hardware">Placas Madre</a>
+                    </div>
+                </div>
+
+                <a href="#artisan">Artisan</a>
                 <a href="#monitores">Monitores</a>
-                <a href="#pedido">Donde va mi Pedido</a> <a href="#contacto">Contacto</a> </nav>
+                <a href="#armatupc">Arma tu PC</a>
+                <a href="#pedido">Donde va mi Pedido</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
             <div class="header-icons">
                 <span>🔍</span> <span>👤</span> <span>🛒</span>
             </div>
@@ -30,7 +41,78 @@
             <p class="hero-tag">LIKE A PRO • INGENIERÍA JAPONESA</p>
             <h2>JUEGA COMO UN<br><span>PROFESIONAL</span></h2>
             <p class="hero-subtext">Periféricos premium importados de Japón. Hechos para dominar cada partida.</p>
-            <button class="btn-main" onclick="location.href='#armatupc'">COMPRAR AHORA</button>
+            <button class="btn-main" onclick="location.href='#hardware'">EXPLORAR CATÁLOGO</button>
+        </section>
+
+        <section id="hardware" class="seccion-tienda">
+            <h2 class="titulo-categoria">HARDWARE <span>ELITE</span></h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box"><img src="img/cpu.png" alt="CPU"></div>
+                    <div class="info"><h3>AMD Ryzen 5 7600</h3><p class="precio">$215.900 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+                <article class="card">
+                    <div class="img-box"><img src="img/gpu.png" alt="GPU"></div>
+                    <div class="info"><h3>NVIDIA RTX 4060 Ti</h3><p class="precio">$429.900 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="beneficios-artisan" class="seccion-tienda dark-bg">
+            <h2 class="titulo-seccion-centro">RENDIMIENTO PURO ARTISAN</h2>
+            <p class="sub-titulo-centro">Usado por los mejores profesionales de FPS. Control absoluto, velocidad letal y calidad sin compromisos.</p>
+            
+            <div class="grid-beneficios">
+                <div class="box-beneficio">
+                    <div class="icon-neon">📄</div>
+                    <h3>HECHO A MANO</h3>
+                    <p>Fabricado con precisión japonesa para durar miles de horas.</p>
+                </div>
+                <div class="box-beneficio">
+                    <div class="icon-neon">⊕</div>
+                    <h3>CONTROL ABSOLUTO</h3>
+                    <p>Superficie balanceada para apuntar con seguridad en cada flick.</p>
+                </div>
+                <div class="box-beneficio">
+                    <div class="icon-neon">⚡</div>
+                    <h3>VELOCIDAD LETAL</h3>
+                    <p>Deslizamiento fluido y respuesta inmediata en cada movimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="artisan" class="seccion-tienda">
+            <h2 class="titulo-categoria">ARTISAN <span>JAPAN</span></h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box">
+                        <img src="img/artisan-hien.png" alt="Artisan Hien">
+                        <span class="jp-tag">匠</span>
+                    </div>
+                    <div class="info"><h3>FX HIEN SOFT</h3><p class="precio">$79.990 CLP</p><button class="btn-buy">Ver Detalle</button></div>
+                </article>
+                <article class="card">
+                    <div class="img-box">
+                        <img src="img/artisan-zero.png" alt="Artisan Zero">
+                        <span class="jp-tag">零</span>
+                    </div>
+                    <div class="info"><h3>FX ZERO MID</h3><p class="precio">$79.990 CLP</p><button class="btn-buy">Ver Detalle</button></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="monitores" class="seccion-tienda dark-bg">
+            <h2 class="titulo-categoria">PANTALLAS <span>ELITE</span></h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <div class="img-box"><img src="img/monitor1.png" alt="Monitor"></div>
+                    <div class="info"><h3>ASUS TUF 240Hz</h3><p class="precio">$219.990 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+                <article class="card">
+                    <div class="img-box"><img src="img/monitor2.png" alt="Monitor"></div>
+                    <div class="info"><h3>Samsung Odyssey G4</h3><p class="precio">$259.990 CLP</p><button class="btn-buy">Añadir</button></div>
+                </article>
+            </div>
         </section>
 
         <section id="armatupc" class="seccion-tienda">
@@ -54,86 +136,6 @@
                 </form>
             </div>
         </section>
-
-        <section id="artisan" class="seccion-tienda dark-bg">
-            <h2 class="titulo-categoria">ARTISAN <span>JAPAN</span></h2>
-            <p class="sub-titulo">Mousepads importados. El fin del compromiso.</p>
-            <div class="grid-productos">
-                <article class="card">
-                    <div class="img-box">
-                        <img src="img/artisan-hien.png" alt="Artisan Hien">
-                        <span class="jp-tag">匠</span>
-                    </div>
-                    <div class="info">
-                        <h3>FX HIEN SOFT</h3>
-                        <p class="precio">$79.990 CLP</p>
-                        <button class="btn-buy">Ver Detalle</button>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="img-box">
-                        <img src="img/artisan-zero.png" alt="Artisan Zero">
-                        <span class="jp-tag">零</span>
-                    </div>
-                    <div class="info">
-                        <h3>FX ZERO MID</h3>
-                        <p class="precio">$79.990 CLP</p>
-                        <button class="btn-buy">Ver Detalle</button>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="beneficios-artisan" class="seccion-tienda">
-            <h2 class="titulo-seccion-centro">RENDIMIENTO PURO IMPORTADO DE JAPÓN</h2>
-            <p class="sub-titulo-centro">Usado por los mejores profesionales de FPS por una sola razón: funciona. Control absoluto, velocidad letal, calidad sin compromisos.</p>
-            
-            <div class="grid-beneficios">
-                <div class="box-beneficio">
-                    <div class="icon-neon">📄</div>
-                    <h3>HECHO A MANO</h3>
-                    <p>Cada pad se fabrica con precisión japonesa y materiales seleccionados para durar miles de horas.</p>
-                </div>
-                <div class="box-beneficio">
-                    <div class="icon-neon">⊕</div>
-                    <h3>CONTROL ABSOLUTO</h3>
-                    <p>Superficie balanceada para apuntar con seguridad en cada flick y micro ajuste.</p>
-                </div>
-                <div class="box-beneficio">
-                    <div class="icon-neon">⚡</div>
-                    <h3>VELOCIDAD LETAL</h3>
-                    <p>Deslize fluido, cero friccion extra, respuesta inmediata en cada movimiento.</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 60px;">
-                <button class="btn-main-glow">VER PRODUCTOS</button>
-            </div>
-        </section>
-
-        <section id="hardware" class="seccion-tienda dark-bg">
-            <h2 class="titulo-categoria">HARDWARE <span>ELITE</span></h2>
-            <div class="grid-productos">
-                <article class="card">
-                    <div class="img-box"><img src="img/cpu.png" alt="CPU"></div>
-                    <div class="info"><h3>AMD Ryzen 5 7600</h3><p class="precio">$215.900 CLP</p><button class="btn-buy">Añadir</button></div>
-                </article>
-                <article class="card">
-                    <div class="img-box"><img src="img/gpu.png" alt="GPU"></div>
-                    <div class="info"><h3>RTX 4060 Ti</h3><p class="precio">$429.900 CLP</p><button class="btn-buy">Añadir</button></div>
-                </article>
-            </div>
-        </section>
-
-        <section id="monitores" class="seccion-tienda">
-            <h2 class="titulo-categoria">PANTALLAS <span>ELITE</span></h2>
-            <div class="grid-productos">
-                <article class="card">
-                    <div class="img-box"><img src="img/monitor1.png" alt="Monitor"></div>
-                    <div class="info"><h3>ASUS TUF 240Hz</h3><p class="precio">$219.990 CLP</p><button class="btn-buy">Añadir</button></div>
-                </article>
-            </div>
-        </section>
-
     </main>
 
     <footer>
